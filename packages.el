@@ -20,3 +20,7 @@
 (package! org-brain)
 (package! ascii-art-to-unicode)
 (package! wakatime-mode)
+(package! rvm)
+(package! pdf-tools)
+(package! russian-holidays)
+(package! evil-numbers)

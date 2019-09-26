@@ -70,21 +70,21 @@
 
        :lang
        ;; assembly          ; assembly for fun or debugging
-       ;; cc                ; C/C++/Obj-C madness
+       cc                ; C/C++/Obj-C madness
        ;; crystal           ; ruby at the speed of c
        ;; clojure           ; java with a lisp
-       ;; csharp            ; unity, .NET, and mono shenanigans
+       csharp            ; unity, .NET, and mono shenanigans
        common-lisp
        data              ; config/data formats
                                         ;erlang            ; an elegant language for a more civilized age
-       ;; elixir            ; erlang done right
-       ;; elm               ; care for a cup of TEA?
+       elixir            ; erlang done right
+       elm               ; care for a cup of TEA?
        emacs-lisp        ; drown in parentheses
        ;;ess               ; emacs speaks statistics
-       ;; go                ; the hipster dialect
+       go                ; the hipster dialect
        ;; (haskell +intero) ; a language that's lazier than I am
        ;; hy                ; readability of scheme w/ speed of python
-       ;; (java +meghanada) ; the poster child for carpal tunnel syndrome
+       (java +meghanada) ; the poster child for carpal tunnel syndrome
        javascript        ; all(hope(abandon(ye(who(enter(here))))))
        ;; julia             ; a better, faster MATLAB
        ;; latex             ; writing papers in Emacs has never been so fun
@@ -118,7 +118,11 @@
        ;; toward a specific purpose. They may have additional dependencies and
        ;; should be loaded late.
        :app
-                                        ;(email +gmail)    ; emacs as an email client
+       (mu4e +gmail)    ; emacs as an email client
+
+       calendar
+       ;;irc              ; how neckbeards socialize
+       (rss +org)        ; emacs as an RSS reader
                                         ;irc               ; how neckbeards socialize
                                         ;(rss +org)        ; emacs as an RSS reader
                                         ;twitter           ; twitter client https://twitter.com/vnought
