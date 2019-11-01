@@ -27,8 +27,9 @@
 (setq-default indent-tabs-mode nil)
 
 (setq
- doom-font (font-spec :family "Hack" :size 20)
- doom-big-font (font-spec :family "Hack" :size 36)
+ doom-font (font-spec :family "Hack" :pixlesize 14)
+ doom-big-font (font-spec :family "Hack" :pixelsize 20)
+
  dart-format-on-save t
  js-indent-level 2
  coffee-tab-width 2
