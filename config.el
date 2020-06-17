@@ -27,8 +27,8 @@
 (setq-default indent-tabs-mode nil)
 
 (setq
- doom-font (font-spec :family "Hack" :pixlesize 14)
- doom-big-font (font-spec :family "Hack" :pixelsize 20)
+ doom-font (font-spec :family "Hack" :size 16)
+ doom-big-font (font-spec :family "Hack" :size 20)
 
  dart-format-on-save t
  js-indent-level 2
@@ -158,6 +158,9 @@
   (setq org-agenda-files (list (concat org-directory "things.org")
                                (concat org-directory "inbox.org")
                                (concat org-directory "reference.org")
+                               (concat org-directory "snikulincal.org")
+                               (concat org-directory "zencarcal.org")
+                               (concat org-directory "grishinroboticscal.org")
                                )))
 
 (set-org-agenda-files)
@@ -516,8 +519,16 @@
 
 (setq mu4e-compose-dont-reply-to-self t)
 
-(add-to-list 'mu4e-user-mail-address-list "snikulin@gmail.com")
-(add-to-list 'mu4e-user-mail-address-list "sn@zen.car")
-(add-to-list 'mu4e-user-mail-address-list "nik@hacky.ru")
-(add-to-list 'mu4e-user-mail-address-list "nikulin@hacky.ru")
-(add-to-list 'mu4e-user-mail-address-list "nikulin-sn@yandex.ru")
+;(add-to-list 'mu4e-user-mail-address-list "snikulin@gmail.com")
+;(add-to-list 'mu4e-user-mail-address-list "sn@zen.car")
+;(add-to-list 'mu4e-user-mail-address-list "nik@hacky.ru")
+;(add-to-list 'mu4e-user-mail-address-list "nikulin@hacky.ru")
+;(add-to-list 'mu4e-user-mail-address-list "nikulin-sn@yandex.ru")
+
+(require 'org-gcal)
+(setq org-gcal-client-id "868058794491-idcb2gvff115t7r1gf2jvru8348mpsgk.apps.googleusercontent.com"
+      org-gcal-client-secret "Hj5VAGOTOOEL9xaLSjb_XooJ"
+      org-gcal-file-alist '(("snikulin@gmail.com" .  "~/Documents/org/snikulincal.org")
+                            ("sn@zen.car" . "~/Documents/org/zencarcal.org")
+                            ("sergey@grishinrobotics.com" . "~/Documents/org/grishinroboticscal.org")
+                            ))
